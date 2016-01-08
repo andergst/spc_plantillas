@@ -1,0 +1,80 @@
+<style type="text/css">
+.cuentaatras { max-width: 910px;}
+img { max-width: 100%;}
+#mc_embed_signup input.email { height: 16px; border-radius: 5px; margin: 1px 10px;}
+#mc_embed_signup input.button {background-color: #FF9900;}
+#mc_embed_signup input.button:hover {background-color: #E27800;}
+#texto_cuenta { font-size: 20px; padding-right: 50px; }
+</style>
+
+
+<div class="outlet-body">
+<!--<div class="cuentaatras"> <span id="texto_cuenta">Próxima promo en: </span> <span id="countdown"></span></div>-->
+
+
+
+                 <img src="http://www.dendalia.es/media/wysiwyg/Banners_outlet/campa_a-flash-agotada.jpg" alt="" />
+
+
+
+
+      <div class="outlet-body-line"><!-- empieza bloque de Mailchimp -->
+            <div class="block-outlet-12-dark">
+                <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+                    <div id="mc_embed_signup">
+                        <form action="//dendalia.us8.list-manage.com/subscribe/post?u=8efcc3340713680ae4a71fb1d&amp;id=8c7d04f4f7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <label class="outlet-news-label" for="mce-EMAIL">NEWSLETTER DENDALIA</label>
+                                <p style=" color: #fff; text-align: center; font-size: 15px; margin: 4px 30px;">¡Hay una manera de enterarte antes que nadie de las mejores ofertas en tecnología!  </br>Suscríbete y recibirás en tu email todas las ofertas  de Dendalia, con precios exclusivos sólo para tí. </p>
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" style="float: left;">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                              <div style="position: absolute; left: -5000px;"><input type="text" name="b_8efcc3340713680ae4a71fb1d_bffae38aac" tabindex="-1" value=""></div>
+                              <div class="clear " style="float: left;"><input type="submit" value="ENVIAR" name="subscribe" id="mc-embedded-subscribe" class="button" style="float: left;"></div>
+                          </div>
+                        </form>
+                    </div>
+
+      <!--End mc_embed_signup-->
+         </div>
+
+      </div><!-- fin de linea de bloque Mailchimp -->
+
+
+
+  </div>
+
+<script type="text/javascript">
+// set the date we're counting down to
+var target_date = new Date("Dec 31, 2015").getTime();
+
+// variables for time units
+var days, hours, minutes, seconds;
+
+// get tag element
+var countdown = document.getElementById("countdown");
+
+// update the tag with id "countdown" every 1 second
+setInterval(function () {
+
+    // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+
+    // format countdown string + set tag value
+    countdown.innerHTML = days + "d : " + hours + "h : "
+    + minutes + "m : " + seconds + "s";
+
+}, 1000);
+</script>
